@@ -1,0 +1,21 @@
+@use '../abstract/variaveis';
+
+.mother {
+    display: flex;
+    background: variaveis.$White-color;
+    margin: 140px auto;
+    height:430px;
+    width: 570px;
+    border-radius: 10px;
+    #channel {
+        display: flex;
+        justify-content: flex-start;
+        border-radius: 10px 0 0 10px;
+        height: 100%;
+        
+       
+    }
+    .channel2 {
+        display: none;
+    }
+}

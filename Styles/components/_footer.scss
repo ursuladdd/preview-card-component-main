@@ -1,0 +1,8 @@
+@use '../abstract/variaveis';
+@use '../abstract/minixs';
+
+.attribution {
+    @include minixs.family-size-weigh-color(variaveis.$Font-Montserrat, 0.75rem, 500,variaveis.$Dark-grayish-blue);
+    text-align: center;
+    text-decoration: none;
+}

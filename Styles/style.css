@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(30, 38%, 92%);
+}
+
+.mother {
+  display: flex;
+  background: hsl(0, 0%, 100%);
+  margin: 140px auto;
+  height: 430px;
+  width: 570px;
+  border-radius: 10px;
+}
+.mother #channel {
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 10px 0 0 10px;
+  height: 100%;
+}
+.mother .channel2 {
+  display: none;
+}
+
+.palavras {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 18px;
+  padding: 30px;
+}
+.palavras .text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+  letter-spacing: 0.4rem;
+}
+.palavras .title {
+  font-family: "Fraunces", sans-serif;
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: hsl(212, 21%, 14%);
+  line-height: 2rem;
+}
+.palavras .descricao {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+  line-height: 1.5rem;
+}
+
+.valores {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  font-family: "Fraunces", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: hsl(158, 36%, 37%);
+}
+.valores #deletado {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+}
+
+button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: hsl(158, 36%, 37%);
+  height: 2.813rem;
+  border: none;
+  border-radius: 8px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: hsl(0, 0%, 100%);
+}
+
+.attribution {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+  text-align: center;
+  text-decoration: none;
+}
+
+@media (max-width: 480px) {
+  .mother {
+    display: flex;
+    flex-direction: column;
+    height: 550px;
+    width: 310px;
+  }
+  .mother #channel {
+    display: none;
+  }
+  .mother .channel2 {
+    display: block;
+    border-radius: 10px 10px 0 0;
+  }
+  .palavras {
+    gap: 15px;
+    padding: 20px;
+  }
+  .palavras .text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.65rem;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 0.4rem;
+  }
+  .palavras .title {
+    font-family: "Fraunces", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: hsl(212, 21%, 14%);
+    line-height: 1.8rem;
+  }
+  .palavras .descricao {
+    font-family: "Montserrat", sans-serif;
+    font-size: 0.809rem;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+    line-height: 1.3rem;
+  }
+  .palavras .valores {
+    font-family: "Fraunces", sans-serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: hsl(158, 36%, 37%);
+  }
+  footer {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */

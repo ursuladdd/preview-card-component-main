@@ -1,0 +1,26 @@
+@use '../abstract/variaveis';
+@use '../abstract/minixs';
+
+
+.valores {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    @include minixs.family-size-weigh-color(variaveis.$Font-Fraunces, 2rem, 700, variaveis.$Dark-cyan);
+    #deletado {
+        @include minixs.family-size-weigh-color(variaveis.$Font-Montserrat, 0.75rem, 500, variaveis.$Dark-grayish-blue);
+        
+    }
+}
+
+button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background: variaveis.$Dark-cyan;
+    height: 2.813rem;
+    border: none;
+    border-radius: 8px;
+    @include minixs.family-size-weigh-color(variaveis.$Font-Montserrat, 0.875rem, 600,variaveis.$White-color);
+}

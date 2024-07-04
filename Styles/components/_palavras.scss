@@ -1,0 +1,21 @@
+@use '../abstract/variaveis';
+@use '../abstract/minixs';
+
+.palavras {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 18px;
+    padding: 30px;
+    .text {
+        @include minixs.family-size-weigh-color(variaveis.$Font-Montserrat, 0.75rem, 500,variaveis.$Dark-grayish-blue);
+        letter-spacing: 0.4rem;
+    }
+    .title {
+        @include minixs.family-size-weigh-color(variaveis.$Font-Fraunces, 1.875rem, 700,variaveis.$Very-dark-blue);
+        line-height: 2rem;
+    }
+    .descricao {
+        @include minixs.family-size-weigh-color(variaveis.$Font-Montserrat, 0.875rem, 500,variaveis.$Dark-grayish-blue);
+        line-height: 1.5rem;
+    }
+}

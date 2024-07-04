@@ -1,0 +1,13 @@
+@use './abstract/root';
+@use './abstract/variaveis';
+@use './abstract/minixs';
+
+@use './components/body';
+@use './components/mother';
+@use './components/palavras';
+@use './components/valores-botao';
+@use './components/footer';
+
+// moblie
+@use './components/media-query';
+

@@ -1,0 +1,45 @@
+@use '../abstract/variaveis';
+@use '../abstract/minixs';
+
+@media (max-width: 480px) {
+    .mother {
+        display: flex;
+        flex-direction: column;
+        height:550px;
+        width: 310px;
+        #channel {
+            display: none;
+        }
+        .channel2 {
+            display: block;
+            border-radius: 10px 10px 0 0;
+        }
+        
+    }
+    .palavras { 
+        gap: 15px;
+        padding: 20px;
+        .text {
+            @include minixs.family-size-weigh-color(variaveis.$Font-Montserrat, 0.65rem, 500,variaveis.$Dark-grayish-blue);
+            letter-spacing: 0.4rem;
+        }
+        .title {
+            @include minixs.family-size-weigh-color(variaveis.$Font-Fraunces, 1.800rem, 700,variaveis.$Very-dark-blue);
+            line-height: 1.8rem;
+        }
+        .descricao {
+            @include minixs.family-size-weigh-color(variaveis.$Font-Montserrat, 0.809rem, 500,variaveis.$Dark-grayish-blue);
+            line-height: 1.3rem;
+        }
+        .valores {
+            @include minixs.family-size-weigh-color(variaveis.$Font-Fraunces,1.75rem, 700, variaveis.$Dark-cyan);
+        }
+        
+
+    }
+    footer {
+        display: none;
+    }
+
+    
+}
